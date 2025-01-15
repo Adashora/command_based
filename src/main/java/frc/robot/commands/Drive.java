@@ -4,12 +4,25 @@
 
 package frc.robot.commands;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.subsystems.Drivetrain;
 
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
 public class Drive extends Command {
+
+  Drivetrain dt;
+
+  Joystick l_joystick;
+  Joystick r_joystick;
+
   /** Creates a new Drive. */
-  public Drive() {
+  public Drive(Drivetrain dt_import, Joystick l_Joystick_import, Joystick r_joystick_import) {
+
+    this.dt = dt_import;
+    addRequirements(this.dt);
+    this.l_joystick = l_Joystick_import;
+    this.r_joystick = r_joystick_import;
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
@@ -19,7 +32,10 @@ public class Drive extends Command {
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
-  public void execute() {}
+  public void execute() {
+
+    this.dt.arcade(this.l_joystick, this.r_joystick);
+  }
 
   // Called once the command ends or is interrupted.
   @Override
