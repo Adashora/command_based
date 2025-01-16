@@ -14,6 +14,8 @@ package frc.robot;
  */
 public final class Constants {
 
+
+  public final class Drive_Ids {
     public static final int right_M1_ID = 0; //Dirvetrain motor ID's
     public static final int right_M2_ID = 1;
     public static final int right_M3_ID = 2;
@@ -24,13 +26,17 @@ public final class Constants {
     public static final int left_M2_ID = 5;
     public static final int left_M3_ID = 6;
     public static final int left_M4_ID = 7;
+  }
 
 
+  public final class Intake{
         public static final int right_intake_ID = 1; //Intake Motor ID's
         public static final int left_intake_ID = 2;
 
+        public static final double out_intake_speed = -0.5;
+        public static final double in_intake_speed = 0.5;
 
-
+  }
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }

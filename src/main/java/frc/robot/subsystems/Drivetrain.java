@@ -37,15 +37,15 @@ public class Drivetrain extends SubsystemBase {
   public Drivetrain() {
 
 
-    r_motor_1 = new SparkMax(Constants.right_M1_ID, MotorType.kBrushless); //defining all right motors
-    r_motor_2 = new SparkMax(Constants.right_M2_ID, MotorType.kBrushless);
-    r_motor_3 = new SparkMax(Constants.right_M3_ID, MotorType.kBrushless);
-    r_motor_4 = new SparkMax(Constants.right_M4_ID, MotorType.kBrushless);
+    r_motor_1 = new SparkMax(Constants.Drive_Ids.right_M1_ID, MotorType.kBrushless); //defining all right motors
+    r_motor_2 = new SparkMax(Constants.Drive_Ids.right_M2_ID, MotorType.kBrushless);
+    r_motor_3 = new SparkMax(Constants.Drive_Ids.right_M3_ID, MotorType.kBrushless);
+    r_motor_4 = new SparkMax(Constants.Drive_Ids.right_M4_ID, MotorType.kBrushless);
 
-    l_motor_1 = new SparkMax(Constants.right_M4_ID, MotorType.kBrushless); //defining all left motors
-    l_motor_2 = new SparkMax(Constants.right_M4_ID, MotorType.kBrushless);
-    l_motor_3 = new SparkMax(Constants.right_M4_ID, MotorType.kBrushless);
-    l_motor_4 = new SparkMax(Constants.right_M4_ID, MotorType.kBrushless);
+    l_motor_1 = new SparkMax(Constants.Drive_Ids.right_M4_ID, MotorType.kBrushless); //defining all left motors
+    l_motor_2 = new SparkMax(Constants.Drive_Ids.right_M4_ID, MotorType.kBrushless);
+    l_motor_3 = new SparkMax(Constants.Drive_Ids.right_M4_ID, MotorType.kBrushless);
+    l_motor_4 = new SparkMax(Constants.Drive_Ids.right_M4_ID, MotorType.kBrushless);
 
     right_config = new SparkMaxConfig(); //define the configs
     left_config = new SparkMaxConfig();
