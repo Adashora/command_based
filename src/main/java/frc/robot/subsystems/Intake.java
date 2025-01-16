@@ -27,8 +27,8 @@ public class Intake extends SubsystemBase {
 
   public Intake() {
 
-    Intake_left = new SparkMax(Constants.left_intake_ID, MotorType.kBrushless); //deifning motors
-    Intake_right = new SparkMax(Constants.right_intake_ID, MotorType.kBrushless);
+    Intake_left = new SparkMax(Constants.Intake.left_intake_ID, MotorType.kBrushless); //deifning motors
+    Intake_right = new SparkMax(Constants.Intake.right_intake_ID, MotorType.kBrushless);
 
     right_intake_config = new SparkMaxConfig();
     left_intake_config = new SparkMaxConfig();
